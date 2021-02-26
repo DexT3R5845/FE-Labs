@@ -16,10 +16,10 @@ export class SidenavComponent implements OnInit {
   sidenavMode: string;
   opened: boolean = this.booksService.opened;
   darkMode: boolean = this.booksService.darkMode;
-  darkModeIcon: string = '../../../assets/images/dark_mode.png';
-  lightModeIcon: string = '../../../assets/images/light_mode.png';
-  darkModeBook: string = '../../../assets/images/dark_mode_book.png';
-  lightModeBook: string = '../../../assets/images/book.png';
+  darkModeIcon: string = './assets/images/dark_mode.png';
+  lightModeIcon: string = './assets/images/light_mode.png';
+  darkModeBook: string = './assets/images/dark_mode_book.png';
+  lightModeBook: string = './assets/images/book.png';
 
   constructor(
     public booksService: BooksService,

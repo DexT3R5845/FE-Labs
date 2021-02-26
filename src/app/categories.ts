@@ -8,7 +8,7 @@ export interface ICategories {
 export const CATEGORIES: ICategories[] = [
   {
     name: 'Programming',
-    icon: '../assets/images/categories/programming.png',
+    icon: './assets/images/categories/programming.png',
     showSubCategories: false,
     subCategories: [
       'JavaScript',
