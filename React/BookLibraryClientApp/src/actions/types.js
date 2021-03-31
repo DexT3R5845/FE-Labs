@@ -1,0 +1,14 @@
+export const GET_AUTHORS = "GET_AUTHORS";
+export const ADD_AUTHOR = "ADD_AUTHOR";
+export const UPDATE_AUTHOR = "UPDATE_AUTHOR";
+export const DELETE_AUTHOR = "DELETE_AUTHOR";
+
+export const GET_BOOK_CATEGORIES = "GET_BOOK_CATEGORIES";
+export const ADD_BOOK_CATEGORY = "ADD_BOOK_CATEGORY";
+export const UPDATE_BOOK_CATEGORY = "UPDATE_BOOK_CATEGORY";
+export const DELETE_BOOK_CATEGORY = "DELETE_BOOK_CATEGORY";
+
+export const GET_BOOKS = "GET_BOOKS";
+export const ADD_BOOK = "ADD_BOOK";
+export const UPDATE_BOOK = "UPDATE_BOOK";
+export const DELETE_BOOK = "DELETE_BOOK";

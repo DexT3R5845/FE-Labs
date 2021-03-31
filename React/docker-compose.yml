@@ -1,0 +1,26 @@
+version: "3"
+services:
+    web:
+        build:
+            context: ./BookLibraryClientApp
+            dockerfile: Dockerfile
+            args:
+                - API_URL=http://localhost:5000
+        ports:
+            - "8080:80"
+        depends_on:
+            - api
+    api:
+        build: ./BookLibraryApi
+        ports:
+            - "5000:80"
+        environment: 
+            ConnectionStrings__DefaultConnection: "Server=db,1433;User Id=sa;password=BookDB;Database=BookLibrary;MultipleActiveResultSets=true;"
+        depends_on:
+            - db
+    db:
+        image: "mcr.microsoft.com/mssql/server:2017-latest-ubuntu"
+        environment:
+            SA_PASSWORD: "BookDB"
+            ACCEPT_EULA: "Y"
+            MSSQL_PID: "Express"
